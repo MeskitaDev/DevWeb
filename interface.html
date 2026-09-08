@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX/UI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            <li><a href="https://github.com/MeskitaDev">@MeskitaDev</a></li>
+        </div>
+        <ul>
+            <a href="interacao.html"><li>Interação Humano-Computador</li></a>
+            <li>|</li>
+            <a href="design.html"><li>Design Thinking</li></a>
+            <li>|</li>
+            <a href="heuristica.html"><li>Heurísticas</li></a>
+            <li>|</li>
+            <a href="wcag.html"><li>Acessibilidade & Teoria das Cores</li></a>
+        </ul>
+    </nav>
+
+    <div id="titulo">
+        <h1>UX/UI na Prática Dev: Do Layout ao Código Funcional</h1>
+    </div>
+
+    <div class="container">
+        <h2><strong>UX (User Experience):</strong> foca na jornada, na usabilidade e na solução de problemas.</h2>
+        <h2><strong>UI (User Interface):</strong> cuida da parte visual, do layout e da hierarquia de elementos.</h2>
+        <br>
+
+        <h2>1. Design Systems e Componentização</h2>
+        <p>Um Design System é o conjunto de padrões, componentes reutilizáveis, regras e tokens visuais que garantem consistência em todo o ecossistema de um produto digital.</p>
+        <div id="destaque">
+            <h3><strong>A. Design Tokens</strong></h3>
+            <p>São as menores unidades de estilo abstraídas em variáveis (ex: variáveis CSS ou tokens no Tailwind).</p>
+
+            <p id="destaque"><strong>Cores:</strong> --color-primary, --color-background, --color-error</p>
+            <p id="destaque"><strong>Espaçamento:</strong> --spacing-sm (8px), --spacing-md (16px), --spacing-lg (24px)</p>
+            <p id="destaque"><strong>Tipografia:</strong> --font-heading, --font-body, --font-size-base</p>
+        </div>
+        <div id="destaque">
+            <h3><strong>B. Ventagens no Código</strong></h3>
+
+            <p id="destaque"><strong>Manutenibilidade:</strong> Alterar um valor no token atualiza a interface globalmente.</p>
+            <p id="destaque"><strong>Consistência:</strong> Impede que a aplicação tenha 10 tons de azul ou 15 tamanhos de fonte diferentes espalhados pelo código.</p>
+        </div>
+        <br>
+
+        <h2>2. Microinterações e Feedback Visual</h2>
+        <p>Microinterações são pequenas animações e respostas visuais que acontecem em momentos específicos da navegação. Elas tornam a experiência mais humana e fluida.</p>
+        <div id="destaque">
+            <h3>Estados de Elementos: </h3><p>Todo elemento interativo precisa ter estados visuais bem definidos:</p>
+            <div id="destaque">
+                <ul>
+                    
+                    <li><strong>Default:</strong>  Estado normal do componente.</li>
+                    <li><strong>Hover:</strong>  Indica que o elemento é clicável ao passar o mouse.</li>
+                    <li><strong>Active/Pressed:</strong>  Confirma o clique ou o toque.</li>
+                    <li><strong>Focus:</strong>  Essencial para navegação por teclado.</li>
+                    <li><strong>Disabled:</strong>  Mostra que a ação não está disponível no momento.</li>
+                </ul>
+            </div><br>
+            <h3>Transições Suaves: </h3><p>Animações sutis (150ms a 300ms) para abertura de menus, modais e tooltips transmitem sensação de velocidade e refino.</p>
+        </div>
+        <br>
+
+        <h2>3. Layout Responsivo e Mobile First</h2>
+        <div id="destaque">
+            <p>Projetar e codificar pensando em telas menores antes de expandir para telas grandes (Mobile First) é o padrão da indústria moderna.</p>
+
+            <div id="destaque">
+                <ul>
+                    <li><strong>Breakpoints Consistentes:</strong> Defina pontos de quebra do layout com base nos dispositivos do público (ex: Mobile < 640px, Tablet < 1024px, Desktop > 1024px).</li>
+                    <li><strong>Áreas de Toque (Touch Targets):</strong> Em telas sensíveis ao toque, botões e links devem ter um tamanho mínimo recomendável de 48x48px para evitar cliques acidentais.</li>
+                    <li><strong>Imagens e Mídias Adaptáveis:</strong> Uso de srcset, imagens vetoriais (SVG) e carregamento preguiçoso (lazy loading) para otimizar consumo de dados e renderização.</li>
+                </ul>
+            </div>
+        </div><br>
+
+        <h2>4. Performance como Fator de UX</h2>
+        <p>A velocidade de carregamento e a estabilidade da página afetam diretamente a experiência do usuário. Uma interface lenta gera frustração imediata.</p>
+        <div id="destaque">
+            <p>Core Web Vitals:</p>
+            <div id="destaque">
+                <ul>
+                    <li><strong>LCP (Largest Contentful Paint):</strong> Mede o tempo de carregamento do conteúdo principal.</li>
+                    <li><strong>INP (Interaction to Next Paint):</strong> Mede a rapidez com que a página responde às interações do usuário.</li>
+                    <li><strong>CLS (Cumulative Layout Shift):</strong> Mede a estabilidade visual para evitar que elementos "pulem" na tela durante o carregamento.</li>
+                </ul>
+            </div>
+        </div><br>
+        
+        <div id="destaque">
+            <h2><strong>"UX/UI não é responsabilidade exclusiva dos designers. Cada decisão de arquitetura CSS, animação, carregamento de assets e estruturação de componentes afeta diretamente a experiência de quem usa a aplicação."</strong></h2>
+        </div>
+    </div>
+</body>
+</html>
