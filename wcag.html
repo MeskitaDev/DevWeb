@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wcag</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            <li><a href="https://github.com/MeskitaDev">@MeskitaDev</a></li>
+        </div>
+        <ul>
+            <a href="interacao.html"><li>Interação Humano-Computador</li></a>
+            <li>|</li>
+            <a href="design.html"><li>Design Thinking</li></a>
+            <li>|</li>
+            <a href="heuristica.html"><li>Heurísticas</li></a>
+            <li>|</li>
+            <a href="interface.html"><li>Desenvolvimento de Interfaces</li></a>
+        </ul>
+    </nav>
+
+    <div id="titulo">
+        <h1>WCAG e Cores: Construindo Interfaces Acessíveis e Inclusivas</h1>
+    </div>
+
+    <div class="container">
+        <h2>A acessibilidade web garante que qualquer pessoa consiga navegar, entender e interagir com uma aplicação.</h2>
+        <p>As <strong>Diretrizes de Acessibilidade para Conteúdo Web (WCAG - Web Content Accessibility Guidelines)</strong> fornecem os padrões internacionais para tornar a web inclusiva. Combinar essas diretrizes com uma escolha inteligente de <strong>paletas de cores</strong> é essencial para criar interfaces funcionais para todos.</p><br>
+
+        <h2>1. Os 4 Princípios Fundamentais da WCAG</h2>
+        <div id="destaque">
+            <h3><strong>1. Perceptível</strong></h3>
+            <p>As informações e os componentes da interface devem ser apresentados de forma que os usuários possam percebê-los.</p>
+
+            <p id="destaque"><strong>Exemplo Dev:</strong> Inclusão do atributo alt descritivo em imagens e marcação semântica (&lt; p &gt;, &lt; h1 &gt;, &lt; label &gt;).</p>
+        </div>
+        <div id="destaque">
+            <h3><strong>2. Operável</strong></h3>
+            <p>Os componentes da interface e a navegação devem ser operáveis por qualquer meio.</p>
+
+            <p id="destaque"><strong>Exemplo Dev:</strong> Exemplo Dev: Garantir que todas as funcionalidades sejam acessíveis via teclado (Tab, Enter, Space) com foco visível.</p>
+        </div>
+        <div id="destaque">
+            <h3><strong>3. Compreensível</strong></h3>
+            <p>As informações e a operação da interface devem ser compreensíveis.</p>
+
+            <p id="destaque"><strong>Exemplo Dev:</strong> Mensagens de erro de formulário claras e indicação do idioma da página via &lt;html lang="pt-BR"&gt;.</p>
+        </div>
+        <div id="destaque">
+            <h3><strong>4. Robusto</strong></h3>
+            <p>O conteúdo deve ser robusto o suficiente para ser interpretado por uma grande variedade de tecnologias assistivas (como leitores de tela).</p>
+
+            <p id="destaque"><strong>Exemplo Dev:</strong> Uso correto de atributos ARIA (aria-label, aria-expanded) apenas quando o HTML semântico não for suficiente.</p>
+        </div> <br>
+
+        <h2>2. Níveis de Conformidade da WCAG</h2>
+        <div id="destaque">
+            <ul>
+                <li><strong>Nível A:</strong> O mínimo essencial. Sem ele, grupos de usuários não conseguirão acessar a interface.</li>
+                <li><strong>Nível AA (Padrão de Mercado):</strong> Remove as principais barreiras de acessibilidade. É o padrão exigido por leis globais e corporativas.</li>
+                <li><strong>Nível AAA:</strong> O nível mais alto de acessibilidade, recomendado para públicos ou plataformas específicas de inclusão.</li>
+            </ul>
+        </div>
+        <br>
+
+        <h2>3. Acessibilidade Cromática e Razão de Contraste</h2>
+        <p>As cores não são apenas estéticas; elas carregam informação e legibilidade.</p>
+        <div id="destaque">
+            <h3><strong>Taxas Mínimas de Contraste</strong></h3>
+            <p>A WCAG especifica que o texto deve ter contraste suficiente em relação ao fundo para ser lido por pessoas com baixa visão:</p>
+
+            <div id="destaque">
+                <ul>
+                    <li><strong>Texto Normal (abaixo de 18pt / 24px):</strong>  Razão mínima de 4.5:1.</li>
+                    <li><strong>Texto Grande (acima de 18pt ou 14pt em negrito):</strong> Razão mínima de 3.0:1.</li>
+                    <li><strong>Componentes de UI (ícones, bordas de inputs):</strong> Razão mínima de 3.0:1.</li>
+                </ul>
+            </div>
+        </div><br>
+
+        <h2>4. Boas Práticas na Escolha de Paletas de Cores</h2>
+        <div id="destaque">
+            <h3><strong>A. Regra dos 60-30-10 para Interfaces</strong></h3>
+            <p>Uma boa distribuição cromática facilita a leitura e direciona o olhar do usuário:</p>
+
+            <div id="destaque">
+                <ul>
+                    <li><strong>60% Cor Dominante:</strong> Geralmente o fundo ou tons neutros (brancos, cinzas, tons escuros no modo dark).</li>
+                    <li><strong>30% Cor Secundária:</strong> Usada para estruturas, cards, menus e textos principais.</li>
+                    <li><strong>10% Cor de Destaque (Accent):</strong> Reservada para Ações Principais (Botões de CTA, links, estados ativos).</li>
+                </ul>
+            </div>
+        </div>
+        <div id="destaque">
+            <h3><strong>B. Suporte ao Modo Escuro (Dark Mode) Acessível</strong></h3>
+            <p>Ao implementar temas escuros via CSS:</p>
+
+            <div id="destaque">
+                <ul>
+                    <li>Evite o preto absoluto (#000000) com texto branco puro (#FFFFFF) para prevenir o excesso de contraste e cansaço visual (halos visuais).</li>
+                    <li>Prefira fundos cinza-escuro (#121212 ou #1E1E1E) com texto off-white (#E0E0E0).</li>
+                </ul>
+            </div>
+        </div><br>
+        
+        <div id="destaque">
+            <h2><strong>"Acessibilidade não é uma funcionalidade extra que se adiciona ao final do projeto, mas sim a forma padrão como o HTML e o CSS devem ser escritos desde o início."</strong></h2>
+        </div>
+    </div>
+</body>
+</html>
