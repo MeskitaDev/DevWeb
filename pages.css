@@ -1,0 +1,35 @@
+:root {
+    --roxo1: #210B2C;
+    --roxo2: #55286F;
+    --roxo3: #BC96E6;
+    --branco: #f3f3f3;
+}
+
+
+/* ESTILO PADRAO */
+body {
+    background-color: var(--roxo1);
+    color: var(--branco);
+}
+.container {
+    padding: 30px 60px;
+    background-color: var(--roxo3);
+    color: var(--roxo1);
+    border-radius: 10px;
+    width: 85em;
+    margin: 1% auto;
+}
+
+
+/* ESTILO LISTA E LINKS */
+
+ul {
+    padding: 0;
+    font-size: 17px;
+}
+#destaque {
+    background-color: #f1defc3a;
+    padding: 10px 40px;
+    border-radius: 10px;
+    margin: 10px;
+}
